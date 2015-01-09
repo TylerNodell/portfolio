@@ -1,0 +1,182 @@
+html, body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #20C7FB;
+  font: normal 16px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif; }
+
+button, input, code {
+  display: inline-block;
+  outline: none;
+  font: inherit;
+  border: none;
+  background: #FDE991;
+  padding: 0; }
+
+button {
+  color: #C7433E;
+  cursor: pointer; }
+
+input {
+  width: 50px; }
+
+#header {
+  background: #8A1C7C;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  text-align: center;
+  position: absolute;
+}
+
+#header h1 {
+  top: 30px;
+  color: #DA4167;
+}
+
+#viewport {
+  width: 500px;
+  height: 500px;
+  background: #C7433E;
+  border: 10px solid #ED5D52;
+  margin: 100px auto 0;
+  position: relative; }
+  #viewport .stack {
+    width: 200px;
+    height: 300px;
+    background: #ED5D52;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 10px; }
+  #viewport li {
+    width: 200px;
+    height: 300px;
+    list-style: none;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2);
+    line-height: 300px;
+    text-align: center;
+    font-size: 100px;
+    border: 10px solid #ECECEC;
+    box-sizing: border-box;
+    cursor: default; }
+    #viewport li.clubs, #viewport li.spades {
+      color: #373737; }
+    #viewport li.spades a img {
+      width: 100px;
+      height: 110px;
+    }
+    #viewport li.hearts a img {
+      width: 100px;
+      height: 110px;
+    }
+    #viewport li.diamonds, #viewport li.hearts {
+      color: #ED5D52; }
+    #viewport li.in-deck:nth-child(3) {
+      top: 2px;
+      transform: translate(2px, 2px) rotate(0.4deg); }
+    #viewport li.in-deck:nth-child(2) {
+      top: 4px;
+      transform: translate(-4px, -2px) rotate(-1deg); }
+  #viewport #control {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0; }
+    #viewport #control button {
+      background: #FFFFFF;
+      color: #373737;
+      font-weight: bold;
+      border: none;
+      font: normal 18px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif;
+      margin: 0 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      box-shadow: 0 2px 0 #63211F;
+      outline: none;
+      position: relative; }
+      #viewport #control button:active {
+        background: #63211F;
+        color: #FFFFFF;
+        bottom: -2px;
+        box-shadow: none; }
+
+#aboutMe {
+  width: 300px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  display: inline-block;
+  top: 110px;
+  left: 10%;
+}
+  #aboutMe div.abmt {
+    text-align: center;
+    background: green;
+    width: 90%;
+    margin: 0 5% auto;
+    top: 5px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+  }
+    #aboutMe div.abmt h3 {
+      position: relative;
+      text-align: center;
+      margin: 3px 0 0;
+    }
+  #aboutMe div.abmp {
+    text-align: center;
+    background: lightblue;
+    width: 90%;
+    margin: 0 5% 0;
+    top: 40px;
+    height: 450px;
+    display: inline-block;
+    position: absolute;
+  }
+    
+
+#contact {
+  width: 300px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  display: inline-block;
+  top: 110px;
+  right: 10%;
+}
+  #contact div.contacttitle {
+    text-align: center;
+    background: green;
+    width: 90%;
+    margin: 0 5% auto;
+    top: 5px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+  }
+    #contact div.contacttitle h3 {
+      position: relative;
+      text-align: center;
+      margin: 3px 0 0;
+    }
+  #contact div.contactinfo {
+    text-align: center;
+    background: lightblue;
+    width: 90%;
+    margin: 0 5% 0;
+    top: 40px;
+    height: 450px;
+    display: inline-block;
+    position: absolute;
+  }
